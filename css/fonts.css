@@ -1,0 +1,29 @@
+@font-face{
+	font-family: DinMtavruli;
+	src: url('../fonts/tbc din mtavruli.ttf');
+}
+
+@font-face{
+	font-family: nevis;
+	src: url('../fonts/nevis.ttf');
+}
+
+@font-face{
+	font-family: ingril;
+	src: url('../fonts/bpg_ingiri_arial_2.ttf');
+}
+
+@font-face{
+	font-family: oris;
+	src: url('../fonts/oris.ttf');
+}
+
+@font-face{
+	font-family: dinNusxuri;
+	src: url('../fonts/tbcdin_nusxuri_medium-webfont.ttf');
+}
+
+@font-face{
+	font-family: BebasNeune;
+	src: url('../fonts/BebasNeue.otf');
+}

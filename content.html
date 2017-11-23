@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>icar.ge - car page</title>
+	<!--[if lt IE 9]>
+ 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>	
+	<header>
+		<div class="headerbg">
+			<div class="upperheader">
+				<nav>
+					<ul>
+						<li><a href="#">ჩვენს შესახებ</a></li>
+						<li><a href="#">დახმარება</a></li>
+						<li><a href="#">განბაჟების კალკულატორი</a></li>
+						<li><a href="#">ონლაინ განვადება</a></li>
+						<li><a href="#">ზეთის კალკულატორი</a></li>
+					</ul>
+				</nav>
+				<div class="tell"><i class="tellicon"></i> 2 30 00 00</div>
+			</div>
+		</div>
+		<div class="logosec">
+			<img src="resources/logo.gif" alt="logo" class="logo">
+			<div class="loginbtns">
+				<div>
+					<i class="profile"></i> 
+					<span class="hellotext">გამარჯობა</span>
+					<span class="entersitetext">საიტზე შესვლა</span>
+				</div>
+				<i class="fbloginbtn"></i>
+			</div>
+		</div>
+	</header>
+	<main>
+<!-- search form section -->
+			<section class="search">
+			<div class="carsearch">
+				<div class="tabs">
+					<button class="activetab"><img src="resources/car.gif" alt="car"></button>
+					<button class="inactive"><img src="resources/tractor.gif" alt="tractor"></button>
+					<button class="inactive"><img src="resources/moto.gif" alt="moto"></button>
+				</div>
+				<div id="srchform1" class="srchform activesrchform">
+					<span class="srchtitle">ავტომობილის ძიება</span>
+					<form action="#">
+						<div class="first">
+							<div>
+								<label for="mark">მწარმოებელი</label>
+								<div class="Gselect" id="cars">
+								<span class="default">აირჩიეთ </span>
+								  <div class="dropdown">
+								  <span value="70">ACURA</span><span value="1">ALFA ROMEO</span><span value="107">APRILIA</span><span value="76">ASTON MARTIN</span><span value="2">AUDI</span><span value="120">BELARUS</span><span value="78">BENTLEY</span><span value="3">BMW</span><span value="111">BOBCAT</span><span value="86">BOMBARDIER</span><span value="69">BUICK</span><span value="4">CADILLAC</span><span value="121">CASE</span><span value="71">CATERPILLAR</span><span value="161">CHANGAN</span><span value="84">CHERY</span><span value="5">CHEVROLET</span><span value="6">CHRYSLER</span><span value="7">CITROEN</span><span value="119">CLAAS</span><span value="128">CZ</span><span value="8">DAEWOO</span><span value="66">DAF</span><span value="9">DAIHATSU</span><span value="140">DERBI</span><span value="153">Detank</span><span value="154">Deutz-Fahr</span><span value="169">DMC</span><span value="127">DNEPR</span><span value="10">DODGE</span><span value="146">DONGFENG</span><span value="81">DUCATI</span><span value="137">ENDURO</span><span value="117">FERMEC</span><span value="74">FERRARI</span><span value="11">FIAT</span><span value="116">FIAT-HITACHI</span><span value="12">FORD</span><span value="157">Fortschritt</span><span value="143">FOTON</span><span value="45">GAZ</span><span value="13">GMC</span><span value="138">GREATWALL</span><span value="130">HAFEI</span><span value="104">HARLEY-DAVIDSON</span><span value="168">Haval</span><span value="160">Hidromek</span><span value="14">HONDA</span><span value="132">HOWO</span><span value="15">HUMMER</span><span value="167">HYSTER</span><span value="16">HYUNDAI</span><span value="53">INFINITI</span><span value="17">ISUZU</span><span value="62">IVECO</span><span value="85">JAC</span><span value="18">JAGUAR</span><span value="106">JAWA</span><span value="110">JCB</span><span value="19">JEEP</span><span value="101">KAMAZ</span><span value="159">KARSAN</span><span value="61">KAWASAKI</span><span value="20">KIA</span><span value="112">KOMATSU</span><span value="108">KRAZ</span><span value="105">KTM</span><span value="73">LAMBORGHINI</span><span value="21">LANCIA</span><span value="22">LAND ROVER</span><span value="23">LEXUS</span><span value="142">LIEBHERR</span><span value="58">LINCOLN</span><span value="125">LINTEX</span><span value="133">Liu Gong</span><span value="65">MAN</span><span value="75">MASERATI</span><span value="115">MASSEY FERGUSON</span><span value="80">MAYBACH</span><span value="102">MAZ</span><span value="24">MAZDA</span><span value="25">MERCEDES-BENZ</span><span value="26">MERCURY</span><span value="166">MG</span><span value="28">MINI</span><span value="29">MITSUBISHI</span><span value="123">MONDIAL</span><span value="48">MOSKVICH</span><span value="129">MURAVEY</span><span value="144">NAZ</span><span value="57">NEOPLAN</span><span value="114">NEW HOLLAND</span><span value="30">NISSAN</span><span value="56">OLDSMOBILE</span><span value="31">OPEL</span><span value="32">PEUGEOT</span><span value="136">POLARIS</span><span value="54">PONTIAC</span><span value="33">PORSCHE</span><span value="34">RENAULT</span><span value="79">ROLLS-ROYCE</span><span value="35">ROVER</span><span value="36">SAAB</span><span value="93">SATURN</span><span value="82">SCANIA</span><span value="55">SCION</span><span value="37">SEAT</span><span value="109">SETRA</span><span value="163">SHACMAN</span><span value="134">SINOTRUK – HOWO</span><span value="38">SKODA</span><span value="64">SSANGYONG</span><span value="39">SUBARU</span><span value="40">SUZUKI</span><span value="92">TATA</span><span value="113">TEREX</span><span value="155">TESLA</span><span value="41">TOYOTA</span><span value="141">TRIUMPH</span><span value="95">UAZ</span><span value="156">URAL</span><span value="44">VAZ</span><span value="42">VOLKSWAGEN</span><span value="43">VOLVO</span><span value="126">VOSKHOD</span><span value="158">Xingtai</span><span value="59">YAMAHA</span><span value="97">ZAZ</span><span value="122">ZEPPELIN</span><span value="99">ZIL</span><span value="131">ZOOMLINE</span><span value="103">ОTHER</span>
+								  </div>
+								</div>
+							</div>
+							<div class="yearfrom">
+								<label for="yearfrom">წელი</label>
+								<div class="Gselect half" id="yearfrom">
+									<span class="default">დან</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+								<div class="Gselect half" id="yearto">
+									<span class="default">მდე</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="transmission">ტრანსმისია</label>
+								<div class="Gselect" id="transmision">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="1">მექანიკური</span><span value="2">ავტომატიკა</span><span value="3">ტიპტრონიკი</span><span value="4">ავტ. ან ტიპტ.</span><span value="5">ნახევრად ავტომატური</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="model">მოდელი</label>
+								<div class="Gselect" id="model">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="pricefrom">ფასი</label>
+								<input type="text" class="ft" id="procefrom">
+								<input type="text" class="ft" id="procefrom">
+							</div>
+							<div>
+								<label for="fueltype">საწვავის ტიპი</label>
+								<div class="Gselect" id="fueltype">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="2">ბენზინი</span><span value="3">დიზელი</span><span value="5">გაზი/ბენზინი</span><span value="6">ჰიბრიდი</span><span value="7">ელექტრო</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div class="ganbajebuli">
+									<input type="checkbox" id="ganbajebuli"><label for="ganbajebuli">განბაჟებული</label>
+								</div>
+								<div class="lefthandle">
+									<input type="checkbox" id="lefthandle"><label for="lefthandle">მარცხენა საჭე</label>
+								</div>								
+							</div>
+							<div>
+								<button class="srchbtn" id="search"><i class="srchicon"></i> ძიება</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="srchform2" class="srchform activesrchform">
+					<span class="srchtitle">ავტომობილის ძიება</span>
+					<form action="#">
+						<div class="first">
+							<div>
+								<label for="mark">მწარმოებელი</label>
+								<div class="Gselect" id="cars">
+								<span class="default">აირჩიეთ </span>
+								  <div class="dropdown">
+								  <span value="70">ACURA</span><span value="1">ALFA ROMEO</span><span value="107">APRILIA</span><span value="76">ASTON MARTIN</span><span value="2">AUDI</span><span value="120">BELARUS</span><span value="78">BENTLEY</span><span value="3">BMW</span><span value="111">BOBCAT</span><span value="86">BOMBARDIER</span><span value="69">BUICK</span><span value="4">CADILLAC</span><span value="121">CASE</span><span value="71">CATERPILLAR</span><span value="161">CHANGAN</span><span value="84">CHERY</span><span value="5">CHEVROLET</span><span value="6">CHRYSLER</span><span value="7">CITROEN</span><span value="119">CLAAS</span><span value="128">CZ</span><span value="8">DAEWOO</span><span value="66">DAF</span><span value="9">DAIHATSU</span><span value="140">DERBI</span><span value="153">Detank</span><span value="154">Deutz-Fahr</span><span value="169">DMC</span><span value="127">DNEPR</span><span value="10">DODGE</span><span value="146">DONGFENG</span><span value="81">DUCATI</span><span value="137">ENDURO</span><span value="117">FERMEC</span><span value="74">FERRARI</span><span value="11">FIAT</span><span value="116">FIAT-HITACHI</span><span value="12">FORD</span><span value="157">Fortschritt</span><span value="143">FOTON</span><span value="45">GAZ</span><span value="13">GMC</span><span value="138">GREATWALL</span><span value="130">HAFEI</span><span value="104">HARLEY-DAVIDSON</span><span value="168">Haval</span><span value="160">Hidromek</span><span value="14">HONDA</span><span value="132">HOWO</span><span value="15">HUMMER</span><span value="167">HYSTER</span><span value="16">HYUNDAI</span><span value="53">INFINITI</span><span value="17">ISUZU</span><span value="62">IVECO</span><span value="85">JAC</span><span value="18">JAGUAR</span><span value="106">JAWA</span><span value="110">JCB</span><span value="19">JEEP</span><span value="101">KAMAZ</span><span value="159">KARSAN</span><span value="61">KAWASAKI</span><span value="20">KIA</span><span value="112">KOMATSU</span><span value="108">KRAZ</span><span value="105">KTM</span><span value="73">LAMBORGHINI</span><span value="21">LANCIA</span><span value="22">LAND ROVER</span><span value="23">LEXUS</span><span value="142">LIEBHERR</span><span value="58">LINCOLN</span><span value="125">LINTEX</span><span value="133">Liu Gong</span><span value="65">MAN</span><span value="75">MASERATI</span><span value="115">MASSEY FERGUSON</span><span value="80">MAYBACH</span><span value="102">MAZ</span><span value="24">MAZDA</span><span value="25">MERCEDES-BENZ</span><span value="26">MERCURY</span><span value="166">MG</span><span value="28">MINI</span><span value="29">MITSUBISHI</span><span value="123">MONDIAL</span><span value="48">MOSKVICH</span><span value="129">MURAVEY</span><span value="144">NAZ</span><span value="57">NEOPLAN</span><span value="114">NEW HOLLAND</span><span value="30">NISSAN</span><span value="56">OLDSMOBILE</span><span value="31">OPEL</span><span value="32">PEUGEOT</span><span value="136">POLARIS</span><span value="54">PONTIAC</span><span value="33">PORSCHE</span><span value="34">RENAULT</span><span value="79">ROLLS-ROYCE</span><span value="35">ROVER</span><span value="36">SAAB</span><span value="93">SATURN</span><span value="82">SCANIA</span><span value="55">SCION</span><span value="37">SEAT</span><span value="109">SETRA</span><span value="163">SHACMAN</span><span value="134">SINOTRUK – HOWO</span><span value="38">SKODA</span><span value="64">SSANGYONG</span><span value="39">SUBARU</span><span value="40">SUZUKI</span><span value="92">TATA</span><span value="113">TEREX</span><span value="155">TESLA</span><span value="41">TOYOTA</span><span value="141">TRIUMPH</span><span value="95">UAZ</span><span value="156">URAL</span><span value="44">VAZ</span><span value="42">VOLKSWAGEN</span><span value="43">VOLVO</span><span value="126">VOSKHOD</span><span value="158">Xingtai</span><span value="59">YAMAHA</span><span value="97">ZAZ</span><span value="122">ZEPPELIN</span><span value="99">ZIL</span><span value="131">ZOOMLINE</span><span value="103">ОTHER</span>
+								  </div>
+								</div>
+							</div>
+							<div class="yearfrom">
+								<label for="yearfrom">წელი</label>
+								<div class="Gselect half" id="yearfrom">
+									<span class="default">დან</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+								<div class="Gselect half" id="yearto">
+									<span class="default">მდე</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="transmission">ტრანსმისია</label>
+								<div class="Gselect" id="transmision">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="1">მექანიკური</span><span value="2">ავტომატიკა</span><span value="3">ტიპტრონიკი</span><span value="4">ავტ. ან ტიპტ.</span><span value="5">ნახევრად ავტომატური</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="model">მოდელი</label>
+								<div class="Gselect" id="model">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="pricefrom">ფასი</label>
+								<input type="text" class="ft" id="procefrom">
+								<input type="text" class="ft" id="procefrom">
+							</div>
+							<div>
+								<label for="fueltype">საწვავის ტიპი</label>
+								<div class="Gselect" id="fueltype">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="2">ბენზინი</span><span value="3">დიზელი</span><span value="5">გაზი/ბენზინი</span><span value="6">ჰიბრიდი</span><span value="7">ელექტრო</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div class="ganbajebuli">
+									<input type="checkbox" id="ganbajebuli2"><label for="ganbajebuli2">განბაჟებული</label>
+								</div>
+								<div class="lefthandle">
+									<input type="checkbox" id="lefthandle2"><label for="lefthandle2">მარცხენა საჭე</label>
+								</div>								
+							</div>
+							<div>
+								<button class="srchbtn" id="search"><i class="srchicon"></i> ძიება</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="srchform3" class="srchform activesrchform">
+					<span class="srchtitle">ავტომობილის ძიება</span>
+					<form action="#">
+						<div class="first">
+							<div>
+								<label for="mark">მწარმოებელი</label>
+								<div class="Gselect" id="cars">
+								<span class="default">აირჩიეთ </span>
+								  <div class="dropdown">
+								  <span value="70">ACURA</span><span value="1">ALFA ROMEO</span><span value="107">APRILIA</span><span value="76">ASTON MARTIN</span><span value="2">AUDI</span><span value="120">BELARUS</span><span value="78">BENTLEY</span><span value="3">BMW</span><span value="111">BOBCAT</span><span value="86">BOMBARDIER</span><span value="69">BUICK</span><span value="4">CADILLAC</span><span value="121">CASE</span><span value="71">CATERPILLAR</span><span value="161">CHANGAN</span><span value="84">CHERY</span><span value="5">CHEVROLET</span><span value="6">CHRYSLER</span><span value="7">CITROEN</span><span value="119">CLAAS</span><span value="128">CZ</span><span value="8">DAEWOO</span><span value="66">DAF</span><span value="9">DAIHATSU</span><span value="140">DERBI</span><span value="153">Detank</span><span value="154">Deutz-Fahr</span><span value="169">DMC</span><span value="127">DNEPR</span><span value="10">DODGE</span><span value="146">DONGFENG</span><span value="81">DUCATI</span><span value="137">ENDURO</span><span value="117">FERMEC</span><span value="74">FERRARI</span><span value="11">FIAT</span><span value="116">FIAT-HITACHI</span><span value="12">FORD</span><span value="157">Fortschritt</span><span value="143">FOTON</span><span value="45">GAZ</span><span value="13">GMC</span><span value="138">GREATWALL</span><span value="130">HAFEI</span><span value="104">HARLEY-DAVIDSON</span><span value="168">Haval</span><span value="160">Hidromek</span><span value="14">HONDA</span><span value="132">HOWO</span><span value="15">HUMMER</span><span value="167">HYSTER</span><span value="16">HYUNDAI</span><span value="53">INFINITI</span><span value="17">ISUZU</span><span value="62">IVECO</span><span value="85">JAC</span><span value="18">JAGUAR</span><span value="106">JAWA</span><span value="110">JCB</span><span value="19">JEEP</span><span value="101">KAMAZ</span><span value="159">KARSAN</span><span value="61">KAWASAKI</span><span value="20">KIA</span><span value="112">KOMATSU</span><span value="108">KRAZ</span><span value="105">KTM</span><span value="73">LAMBORGHINI</span><span value="21">LANCIA</span><span value="22">LAND ROVER</span><span value="23">LEXUS</span><span value="142">LIEBHERR</span><span value="58">LINCOLN</span><span value="125">LINTEX</span><span value="133">Liu Gong</span><span value="65">MAN</span><span value="75">MASERATI</span><span value="115">MASSEY FERGUSON</span><span value="80">MAYBACH</span><span value="102">MAZ</span><span value="24">MAZDA</span><span value="25">MERCEDES-BENZ</span><span value="26">MERCURY</span><span value="166">MG</span><span value="28">MINI</span><span value="29">MITSUBISHI</span><span value="123">MONDIAL</span><span value="48">MOSKVICH</span><span value="129">MURAVEY</span><span value="144">NAZ</span><span value="57">NEOPLAN</span><span value="114">NEW HOLLAND</span><span value="30">NISSAN</span><span value="56">OLDSMOBILE</span><span value="31">OPEL</span><span value="32">PEUGEOT</span><span value="136">POLARIS</span><span value="54">PONTIAC</span><span value="33">PORSCHE</span><span value="34">RENAULT</span><span value="79">ROLLS-ROYCE</span><span value="35">ROVER</span><span value="36">SAAB</span><span value="93">SATURN</span><span value="82">SCANIA</span><span value="55">SCION</span><span value="37">SEAT</span><span value="109">SETRA</span><span value="163">SHACMAN</span><span value="134">SINOTRUK – HOWO</span><span value="38">SKODA</span><span value="64">SSANGYONG</span><span value="39">SUBARU</span><span value="40">SUZUKI</span><span value="92">TATA</span><span value="113">TEREX</span><span value="155">TESLA</span><span value="41">TOYOTA</span><span value="141">TRIUMPH</span><span value="95">UAZ</span><span value="156">URAL</span><span value="44">VAZ</span><span value="42">VOLKSWAGEN</span><span value="43">VOLVO</span><span value="126">VOSKHOD</span><span value="158">Xingtai</span><span value="59">YAMAHA</span><span value="97">ZAZ</span><span value="122">ZEPPELIN</span><span value="99">ZIL</span><span value="131">ZOOMLINE</span><span value="103">ОTHER</span>
+								  </div>
+								</div>
+							</div>
+							<div class="yearfrom">
+								<label for="yearfrom">წელი</label>
+								<div class="Gselect half" id="yearfrom">
+									<span class="default">დან</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+								<div class="Gselect half" id="yearto">
+									<span class="default">მდე</span>
+									<div class="dropdown">
+										<span value="2017">2017</span><span value="2016">2016</span><span value="2015">2015</span><span value="2014">2014</span><span value="2013">2013</span><span value="2012">2012</span><span value="2011">2011</span><span value="2010">2010</span><span value="2009">2009</span><span value="2008">2008</span><span value="2007">2007</span><span value="2006">2006</span><span value="2005">2005</span><span value="2004">2004</span><span value="2003">2003</span><span value="2002">2002</span><span value="2001">2001</span><span value="2000">2000</span><span value="1999">1999</span><span value="1998">1998</span><span value="1997">1997</span><span value="1996">1996</span><span value="1995">1995</span><span value="1994">1994</span><span value="1993">1993</span><span value="1992">1992</span><span value="1991">1991</span><span value="1990">1990</span><span value="1989">1989</span><span value="1988">1988</span><span value="1987">1987</span><span value="1986">1986</span><span value="1985">1985</span><span value="1984">1984</span><span value="1983">1983</span><span value="1982">1982</span><span value="1981">1981</span><span value="1980">1980</span><span value="1979">1979</span><span value="1978">1978</span><span value="1977">1977</span><span value="1976">1976</span><span value="1975">1975</span><span value="1974">1974</span><span value="1973">1973</span><span value="1972">1972</span><span value="1971">1971</span><span value="1970">1970</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="transmission">ტრანსმისია</label>
+								<div class="Gselect" id="transmision">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="1">მექანიკური</span><span value="2">ავტომატიკა</span><span value="3">ტიპტრონიკი</span><span value="4">ავტ. ან ტიპტ.</span><span value="5">ნახევრად ავტომატური</span>
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="model">მოდელი</label>
+								<div class="Gselect" id="model">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										
+									</div>
+								</div>
+							</div>
+							<div>
+								<label for="pricefrom">ფასი</label>
+								<input type="text" class="ft" id="procefrom">
+								<input type="text" class="ft" id="procefrom">
+							</div>
+							<div>
+								<label for="fueltype">საწვავის ტიპი</label>
+								<div class="Gselect" id="fueltype">
+									<span class="default">აირჩიეთ</span>
+									<div class="dropdown">
+										<span value="2">ბენზინი</span><span value="3">დიზელი</span><span value="5">გაზი/ბენზინი</span><span value="6">ჰიბრიდი</span><span value="7">ელექტრო</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div class="ganbajebuli">
+									<input type="checkbox" id="ganbajebuli3"><label for="ganbajebuli3">განბაჟებული</label>
+								</div>
+								<div class="lefthandle">
+									<input type="checkbox" id="lefthandle3"><label for="lefthandle3">მარცხენა საჭე</label>
+								</div>								
+							</div>
+							<div>
+								<button class="srchbtn" id="search"><i class="srchicon"></i> ძიება</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				</div>
+				</div>
+			</div>
+			<div class="partsSearch">
+				<img src="resources/autoparts.png" alt="parts">
+			</div>
+		</section>
+<!-- end of search form section -->
+<!-- content section -->
+		<section class="content">
+			<aside class="banner">
+				<img src="resources/banner.gif">
+			</aside>
+			<section class="fastinfo">
+				<span class="id">ID: 56002568</span>
+				<span class="view">
+					<i class="view"></i>
+					<span class="text">125</span>
+				</span>
+				<span class="published">
+					<i class="published"></i>
+					<span class="text">12 მარტი 2015</span>
+				</span>
+				<span class="location">
+					<i class="location"></i>
+					<span class="text">თბილისი</span>
+				</span>
+				<span class="print">
+					<i class="print"></i>
+					<span class="text">ბეჭდვა</span>
+				</span>
+				<span class="share">
+					<i class="fb"></i>
+					<i class="gplus"></i>
+					<i class="odno"></i>
+					<i class="vk"></i>
+				</span>
+			</section>
+<!-- content page slider -->
+			<section class="innerslider">
+				<div id="slider">
+					<span class="prev"><i class="prev"></i></span>
+					<span class="next"><i class="next"></i></span>
+					<img src="resources/carlg.png" class="active" alt="slide">
+					<img src="resources/carlg.png" alt="slide">
+					<img src="resources/carlg.png" alt="slide">
+					<img src="resources/carlg.png" alt="slide">
+					<img src="resources/carlg.png" alt="slide">
+					<img src="resources/carlg.png" alt="slide">
+					<img src="http://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701" alt="slide">
+					<img src="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg" alt="slide">
+				</div>
+				<div class="gallery">
+					<div class="mda">
+						<div class="active">
+						<img src="resources/carsm.png" alt="slide">
+						<span class="numeration"></span>
+						</div>
+						<div>
+							<img src="resources/carsm.png" alt="slide">
+						</div>
+						<div>
+							<img src="resources/carsm.png" alt="slide">
+						</div>
+						<div>
+							<img src="resources/carsm.png" alt="slide">
+						</div>
+						<div>
+							<img src="resources/carsm.png" alt="slide">
+						</div>
+						<div>
+							<img src="resources/carsm.png" alt="slide">
+						</div>
+						<div>
+							<img src="http://cdn.theatlantic.com/assets/media/img/photo/2015/11/images-from-the-2016-sony-world-pho/s01_130921474920553591/main_900.jpg?1448476701" alt="slide">
+						</div>
+						<div>
+							<img src="http://www.gettyimages.ca/gi-resources/images/Homepage/Category-Creative/UK/UK_Creative_462809583.jpg" alt="slide">
+						</div>
+					</div>
+					<div class="topgrad"></div>
+					<div class="bottomgrad"></div>
+				</div>
+			</section>
+<!-- end of content page slider -->
+			<section class="descr">
+				<header>
+					<div class="price">
+						<span class="p">3600$</span>
+						<span class="g">+350$ განბაჟება</span>
+					</div>
+					<div class="user">
+						<span class="name"><i class="usericon"></i> გიორგი</span>
+						<span class="tell"><i class="tellicon"></i> [ +995 ] 595 56 89 89</span>
+						<span class="allstatement"><i class="statementicon"></i> ყველა განცხადება</span>
+					</div>
+				</header>
+				<article>
+					<div class="desc">
+						<p>
+							4BB შეფასებითა და 78000 გარბენით... მანქანა არის იდეალურ მდგომარეობაში... ძრავზე, კარობკაზე, ვიზუალურ მხარეზე პასუხიმგებელი ვარ.... ეკონომიური... მოვლილი და სუფთა სალონით... კარობკაზე გარანტიას მოგცემთ...სადაც გინდათ წაიყვანეთ და შეამოწმეთ... ამაზე იაფად A კლასს საიტზე ვერ ნახავთ, თანხა მჭირდება... დარეკეთ რეალურმა მყიდველებმა ( საჭე გადადის 300$-ად უპრობლემოდ)....
+						</p>
+						<span class="share">
+						<i class="fb"></i>
+						<i class="gplus"></i>
+						<i class="odno"></i>
+						<i class="vk"></i>
+						</span>
+					</div>
+					<table>
+						<tr>
+							<td>მწარმოებელი</td>
+							<td>-</td>
+							<td>TOYOTA</td>
+							<td>ABS</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>მოდელი</td>
+							<td>-</td>
+							<td>VITZ RS TRD</td>
+							<td>ელ. შუშები</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>გამოშვების წელი</td>
+							<td>-</td>
+							<td>2005 / 05</td>
+							<td>კონდინციონერი</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>კატეგორია</td>
+							<td>-</td>
+							<td>ჰეჩბექი</td>
+							<td>კლიმატკონტროლი</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>საწვავის ტიპი</td>
+							<td>-</td>
+							<td>ბენზინი</td>
+							<td>ტყავის სალონი</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>ძრავის მოცულობა</td>
+							<td>-</td>
+							<td>1500</td>
+							<td>დისკები:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>გარბენი</td>
+							<td>-</td>
+							<td>104000 კმ.</td>
+							<td>ნავიგაცია:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>ცილინდრები</td>
+							<td>-</td>
+							<td>4</td>
+							<td>ცენტრალური საკეტი:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>გადაცემათა კოლოფი</td>
+							<td>-</td>
+							<td>მექანიკური</td>
+							<td>ლუქი:</td>
+							<td>-</td>
+							<td><i class="fa fa-minus" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>წამყვანი თვლები</td>
+							<td>-</td>
+							<td>წინა</td>
+							<td>სიგნალიზაცია:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>კარები</td>
+							<td>-</td>
+							<td>5-Apr</td>
+							<td>ბორტკომპიუტერი:</td>
+							<td>-</td>
+							<td><i class="fa fa-minus" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>საჭე</td>
+							<td>-</td>
+							<td>მარჯვნივ</td>
+							<td>ჰიდრავლიკა:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>მანქანის ფერი</td>
+							<td>-</td>
+							<td>ნაცრისფერი</td>
+							<td>მოცურების საწინააღმდეგო:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>სალონის ფერი</td>
+							<td>-</td>
+							<td>შავი</td>
+							<td>სავარძლების გათბობა:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+						<tr>
+							<td>აირბეგი</td>
+							<td>-</td>
+							<td>4</td>
+							<td>პარკინგკონტროლი:</td>
+							<td>-</td>
+							<td><i class="fa fa-check" aria-hidden="true"></i></td>
+						</tr>
+					</table>
+				</article>
+			</section>
+		</section>
+	</main>
+<!-- end of main -->
+<!-- footer section -->
+	<footer>
+		<div class="fwrapper">
+			<img src="resources/logo.gif" alt="logo" class="logo">
+			<div class="fastlinks">
+				<ul>
+					<li><a href="#">ჩვენს შესახებ</a></li>
+					<li><a href="#">დახმარება</a></li>
+					<li><a href="#">განბაჟების კალკულატორი</a></li>
+					<li><a href="#">ონლაინ განვადება</a></li>
+					<li><a href="#">ზეთის კალკულატორი</a></li>
+				</ul>
+				<p>
+					<span class="copy">ყველა უფლება დაცულია &copy; 2017. შპს აგგ</span>
+					<span class="createdby">შექმნილია <a href="#">ფლეშ სტუდიო</a>-ს მიერ</span>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
